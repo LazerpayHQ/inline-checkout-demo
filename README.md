@@ -1,1 +1,1 @@
-# inline-checkout-demo
+# LazerPay inline-checkout-demo 
