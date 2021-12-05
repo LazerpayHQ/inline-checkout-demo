@@ -1,0 +1,339 @@
+@font-face {
+  font-family: 'Sohne-Buchin';
+  src: url('https://cdn.jsdelivr.net/gh/LazerPay-Finance/Sohne-font/Sohne-Buch.eot'); /* IE9 Compat Modes */
+  src: url('https://cdn.jsdelivr.net/gh/LazerPay-Finance/Sohne-font/Sohne-Buch.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://cdn.jsdelivr.net/gh/LazerPay-Finance/Sohne-font/Sohne-Buch.woff') format('woff'), /* Modern Browsers */
+    url('https://cdn.jsdelivr.net/gh/LazerPay-Finance/Sohne-font/Sohne-Buch.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('https://cdn.jsdelivr.net/gh/LazerPay-Finance/Sohne-font/Sohne-Buch.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+:root {
+  --pink: #FEEFDF;
+  --primary: #003585;
+  --gray-50 : #A5A5A5;
+  --gray-100 : #959595;
+  --gray-200 : #666666;
+  --black: #000000;
+  --black-2: #2B2B2B;
+  --green: #37C978;
+  --white: #FFFFFF;
+  --xxs: 12px;
+  --xs: 14px;
+  --sm: 16px;
+  --md: 18px;
+  --lg: 18px;
+  --xl: 24px;
+  --bold: 600;
+  --normal: 500
+}
+
+body {
+  font-family: 'Sohne-Buchin', Lato;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.body-xl {
+  font-size: var(--xl);
+  line-height: 34px;
+}
+
+.body-md {
+  font-size: var(--md);
+  list-style: 24px;
+}
+
+.body-sm {
+  font-size: var(--sm);
+  line-height: 24px;
+}
+
+.body-xs {
+  font-size: var(--xs);
+  list-style: 24px;
+}
+
+.body-xxs {
+  font-size: var(--xxs);
+  list-style: 16.2px;
+}
+
+.btn {
+  font-size: var(--sm);
+  font-weight: var(--bold);
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  height: 54px;
+  transition: .3 cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.btn:hover {
+  transition: .3 cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: .8;
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container > * {
+  flex: 1;
+}
+
+.container .product {
+  padding: 30px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .product .item {
+  max-width: 380px;
+}
+
+.container .product .item .img {
+  overflow: hidden;
+  max-width: 380px;
+}
+
+.container .product .item .img img {
+  height: auto;
+  object-fit: contain;
+}
+
+.container .product .item .store-meta {
+  margin-top: 8px;
+}
+
+.container .product .item .store-name {
+  margin-left: 10px;
+  display: inline-block;
+  color: var(--gray-200);
+}
+
+.container .product .item .description {
+  line-height: 23px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+} 
+
+.container .product .item .description .extra {
+  color: var(--gray-200);
+  margin: 10px 0;
+}
+
+.container .product .item .price {
+  display: flex;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.container .product .item .price .strike {
+  font-weight: 500;
+  color: var(--gray-50);
+  margin-left: 10px;
+  text-decoration: line-through 
+}
+
+.container .product .item .excerpt {
+  text-align: center;
+  margin-top: 7px;
+  color: var(--gray-100);
+  font-style: italic;
+}
+
+.container .bg-cover .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .09;
+  background:var(--pink);
+}
+
+.container .bg-cover {
+  max-width: 50%;
+  overflow: hidden;
+  min-width: 400px;
+}
+
+.container .bg-cover .slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.container .bg-cover .slide img {
+  object-fit: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container .bg-cover .slick-arrow {
+  position: absolute;
+  top: 50%;
+  color: var(--white);
+  height: 54px;
+  width: 54px;
+  border: none;
+  background-color: var(--black-2);
+  border-radius: 100%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.container .bg-cover .slick-arrow:hover {
+  opacity: .9;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.container .bg-cover .slick-arrow svg {
+  width: 20px;
+}
+
+.container .bg-cover .slick-arrow.slick-next {
+  right: 20px;
+}
+
+.container .bg-cover .slick-arrow.slick-prev {
+  left: 20px;
+}
+
+.container .bg-cover .slick-dots {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  z-index: 99;
+}
+
+.container .bg-cover .slick-dots button {
+  visibility: hidden;
+}
+
+.container .bg-cover .slick-dots li {
+  height: 10px;
+  width: 10px;
+  background-color: var(--white);
+  margin: 0 3px;
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.container .bg-cover .slick-dots li.slick-active {
+  background-color: var(--green);
+}
+
+@media (max-width: 768px) {
+  .cursor-pointer {
+    cursor: default;
+  }
+
+  body {
+    padding: 0 0px 50px;
+    overflow: auto;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 100%;
+    overflow: auto;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .container > * {
+    width: 100%;
+  }
+
+  .container .bg-cover {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .container .bg-cover .slick-arrow {
+    height: 40px;
+    width: 40px;
+  }
+
+  .container .bg-cover .slick-dots {
+    top: 90%;
+  }
+}
