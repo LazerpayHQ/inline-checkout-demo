@@ -1,128 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Checkout with Lazerpay</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css">
-  <script src="https://cdn.jsdelivr.net/gh/LazerPay-Finance/checkout-build@main/checkout%401.0.1/dist/index.min.js"type="text/javascript"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <div class="product">
-      <div class="item">
-        <div class="img">
-          <img src="assets/bottle-small.png" />
+    <head>
+        <meta charset="UTF-8">
+        <title>Checkout with Lazerpay</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://cdn.jsdelivr.net/gh/LazerPay-Finance/checkout-build@main/checkout%401.0.1/dist/index.min.js"type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="product">
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/bottle-small.png" />
+                    </div>
+                    <div class="store-meta flex justify-between items-center">
+                        <div class="meta flex items-center">
+                            <img src="assets/store.png" height="32" width="32" alt="store-owner-img" />
+                            <span class="store-name body-xs">by Package Free</span>
+                        </div>
+                        <svg class="cursor-pointer" width="76" height="48" viewBox="0 0 76 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_dd_6237_7178)">
+                                <rect x="7" y="4" width="62" height="34" rx="6" fill="white"/>
+                                <rect width="16" height="16" transform="matrix(-1 0 0 1 33 13)" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6852 26.4771L24.9999 25.3333L24.2975 26.4666C24.7217 26.7295 25.2571 26.7336 25.6852 26.4771ZM26.0052 17.3383C26.5205 16.9883 27.1938 16.6667 27.9279 16.6667C29.6115 16.6667 30.5996 17.9048 30.2702 19.6042C29.7063 22.5137 24.9999 25.3333 24.9999 25.3333C25.6852 26.4771 25.6849 26.4773 25.6852 26.4771L25.6878 26.4755L25.6922 26.4729L25.7061 26.4645C25.7175 26.4575 25.7333 26.4479 25.7533 26.4356C25.7931 26.4109 25.8495 26.3758 25.9203 26.3306C26.0616 26.2405 26.2608 26.1104 26.5002 25.9456C26.9771 25.6173 27.6226 25.1452 28.2912 24.5723C28.956 24.0026 29.6691 23.3117 30.2638 22.5422C30.8502 21.7835 31.3831 20.8698 31.5792 19.8579C31.803 18.7033 31.6018 17.5513 30.8963 16.6667C30.1862 15.7765 29.1052 15.3333 27.9279 15.3333C26.7121 15.3333 25.7015 15.906 25.0745 16.3631C25.0493 16.3815 25.0244 16.3999 24.9999 16.4182C24.9755 16.3999 24.9506 16.3815 24.9253 16.3631C24.2984 15.906 23.2878 15.3333 22.072 15.3333C19.4419 15.3333 17.9246 17.7698 18.4322 19.9116C18.665 20.8937 19.2042 21.788 19.7917 22.5388C20.3873 23.3001 21.0913 23.9877 21.7464 24.5574C22.4048 25.1299 23.0366 25.6031 23.5029 25.9328C23.7368 26.0982 23.9311 26.2289 24.0688 26.3195C24.1378 26.3649 24.1927 26.4002 24.2314 26.425C24.2413 26.4312 24.2501 26.4368 24.2578 26.4417C24.2653 26.4465 24.2718 26.4506 24.2773 26.454L24.2907 26.4624L24.295 26.4651L24.2975 26.4666C24.2978 26.4668 24.2975 26.4666 24.9999 25.3333C24.9999 25.3333 20.4138 22.4909 19.7296 19.6042C19.4002 18.2143 20.3884 16.6667 22.072 16.6667C22.8061 16.6667 23.4794 16.9883 23.9947 17.3383C24.6098 17.7561 24.9999 18.2143 24.9999 18.2143C24.9999 18.2143 25.39 17.7561 26.0052 17.3383Z" fill="#A5A5A5"/>
+                                <path d="M43.592 24.484C44.204 24.004 44.552 23.32 44.552 22.564C44.552 21.556 44.012 20.824 43.064 20.524C43.784 20.272 44.288 19.516 44.288 18.664C44.288 17.932 44.036 17.356 43.544 16.912C43.052 16.468 42.38 16.252 41.54 16.252C40.724 16.252 40.028 16.492 39.464 16.972C38.9 17.452 38.564 18.076 38.444 18.856L39.824 19.108C40.004 18.136 40.628 17.524 41.492 17.524C42.344 17.524 42.848 17.98 42.848 18.748C42.848 19.504 42.32 19.912 41.372 19.912H40.532V21.208H41.384C42.476 21.208 43.076 21.652 43.076 22.468C43.076 23.332 42.452 23.86 41.48 23.86C40.532 23.86 39.836 23.224 39.692 22.216L38.216 22.492C38.456 24.136 39.716 25.132 41.504 25.132C42.32 25.132 43.052 24.904 43.592 24.484ZM45.3492 25H51.3732V23.656H47.4612L48.9012 22.516C49.7052 21.88 50.1612 21.448 50.5092 21.004C51.0252 20.344 51.2652 19.696 51.2652 18.988C51.2652 18.16 50.9892 17.5 50.4492 17.008C49.9092 16.504 49.2012 16.252 48.3132 16.252C47.5332 16.252 46.7772 16.528 46.2372 17.02C45.6612 17.548 45.3492 18.256 45.3492 19.036C45.3492 19.372 45.3972 19.6 45.5052 19.936H46.9332C46.8372 19.684 46.7892 19.396 46.7892 19.12C46.7892 18.22 47.4132 17.56 48.2772 17.56C49.1532 17.56 49.7412 18.172 49.7412 19.084C49.7412 19.612 49.4892 20.14 48.9252 20.728C48.7932 20.872 48.6252 21.028 48.4452 21.196C48.2652 21.352 47.9532 21.616 47.5092 21.976L45.3492 23.752V25ZM55.0255 25.132C56.1655 25.132 57.1135 24.616 57.7495 23.668C58.2895 22.864 58.5775 21.796 58.5775 20.584C58.5775 19.432 58.3255 18.412 57.8575 17.656C57.2815 16.744 56.4055 16.252 55.3015 16.252C54.4495 16.252 53.6815 16.552 53.1175 17.092C52.5415 17.632 52.2295 18.412 52.2295 19.24C52.2295 20.02 52.5055 20.74 53.0215 21.268C53.5495 21.796 54.2455 22.096 55.0255 22.096C55.9255 22.096 56.7055 21.712 57.1735 21.076C57.1495 21.892 56.9455 22.564 56.5495 23.08C56.1655 23.596 55.6735 23.86 55.0855 23.86C54.2815 23.86 53.6935 23.416 53.4535 22.612L52.2175 23.152C52.6495 24.448 53.6215 25.132 55.0255 25.132ZM55.3015 17.488C56.2615 17.488 56.9815 18.196 56.9815 19.156C56.9815 19.624 56.8135 20.032 56.4895 20.356C56.1655 20.68 55.7575 20.836 55.2895 20.836C54.8215 20.836 54.4255 20.68 54.1015 20.356C53.7775 20.032 53.6215 19.624 53.6215 19.156C53.6215 18.196 54.3415 17.488 55.3015 17.488Z" fill="#666666"/>
+                                <rect x="7.5" y="4.5" width="61" height="33" rx="5.5" stroke="#EEEEEE"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_dd_6237_7178" x="0" y="0" width="76" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_dropShadow_6237_7178"/>
+                                    <feOffset dy="3"/>
+                                    <feGaussianBlur stdDeviation="4"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0 0.278431 0 0 0 0.05 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6237_7178"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset/>
+                                    <feGaussianBlur stdDeviation="0.5"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0470588 0 0 0 0 0.101961 0 0 0 0 0.294118 0 0 0 0.24 0"/>
+                                    <feBlend mode="normal" in2="effect1_dropShadow_6237_7178" result="effect2_dropShadow_6237_7178"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_6237_7178" result="shape"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="description">
+                        <h2 class="body-xl">Pamkim water bottle</h2>
+                        <div class="flex items-center price">
+                            <b class="body-sm">$25.00</b>
+                            <span class="strike body-xs">$34.00</span>
+                        </div>
+                        <p class="body-sm extra">This exclusive Package Free water bottle will make you want to hydrate! It's lightweight and easy to bring anywhere.  </p>
+                    </div>
+                    <button class="btn paynow">Pay with LazerPay</button>
+                    <p class="body-xxs excerpt">Settle payment with cash & crypto</p>
+                </div>
+            </div>
+            <div class="bg-cover">
+                <div class="overlay"></div>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="assets/sink.png" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/bottle.png" />
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="store-meta flex justify-between items-center">
-          <div class="meta flex items-center">
-            <img src="assets/store.png" height="32" width="32" alt="store-owner-img" />
-            <span class="store-name body-xs">by Package Free</span>
-          </div>
-          <svg class="cursor-pointer" width="76" height="48" viewBox="0 0 76 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_dd_6237_7178)">
-            <rect x="7" y="4" width="62" height="34" rx="6" fill="white"/>
-            <rect width="16" height="16" transform="matrix(-1 0 0 1 33 13)" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6852 26.4771L24.9999 25.3333L24.2975 26.4666C24.7217 26.7295 25.2571 26.7336 25.6852 26.4771ZM26.0052 17.3383C26.5205 16.9883 27.1938 16.6667 27.9279 16.6667C29.6115 16.6667 30.5996 17.9048 30.2702 19.6042C29.7063 22.5137 24.9999 25.3333 24.9999 25.3333C25.6852 26.4771 25.6849 26.4773 25.6852 26.4771L25.6878 26.4755L25.6922 26.4729L25.7061 26.4645C25.7175 26.4575 25.7333 26.4479 25.7533 26.4356C25.7931 26.4109 25.8495 26.3758 25.9203 26.3306C26.0616 26.2405 26.2608 26.1104 26.5002 25.9456C26.9771 25.6173 27.6226 25.1452 28.2912 24.5723C28.956 24.0026 29.6691 23.3117 30.2638 22.5422C30.8502 21.7835 31.3831 20.8698 31.5792 19.8579C31.803 18.7033 31.6018 17.5513 30.8963 16.6667C30.1862 15.7765 29.1052 15.3333 27.9279 15.3333C26.7121 15.3333 25.7015 15.906 25.0745 16.3631C25.0493 16.3815 25.0244 16.3999 24.9999 16.4182C24.9755 16.3999 24.9506 16.3815 24.9253 16.3631C24.2984 15.906 23.2878 15.3333 22.072 15.3333C19.4419 15.3333 17.9246 17.7698 18.4322 19.9116C18.665 20.8937 19.2042 21.788 19.7917 22.5388C20.3873 23.3001 21.0913 23.9877 21.7464 24.5574C22.4048 25.1299 23.0366 25.6031 23.5029 25.9328C23.7368 26.0982 23.9311 26.2289 24.0688 26.3195C24.1378 26.3649 24.1927 26.4002 24.2314 26.425C24.2413 26.4312 24.2501 26.4368 24.2578 26.4417C24.2653 26.4465 24.2718 26.4506 24.2773 26.454L24.2907 26.4624L24.295 26.4651L24.2975 26.4666C24.2978 26.4668 24.2975 26.4666 24.9999 25.3333C24.9999 25.3333 20.4138 22.4909 19.7296 19.6042C19.4002 18.2143 20.3884 16.6667 22.072 16.6667C22.8061 16.6667 23.4794 16.9883 23.9947 17.3383C24.6098 17.7561 24.9999 18.2143 24.9999 18.2143C24.9999 18.2143 25.39 17.7561 26.0052 17.3383Z" fill="#A5A5A5"/>
-            <path d="M43.592 24.484C44.204 24.004 44.552 23.32 44.552 22.564C44.552 21.556 44.012 20.824 43.064 20.524C43.784 20.272 44.288 19.516 44.288 18.664C44.288 17.932 44.036 17.356 43.544 16.912C43.052 16.468 42.38 16.252 41.54 16.252C40.724 16.252 40.028 16.492 39.464 16.972C38.9 17.452 38.564 18.076 38.444 18.856L39.824 19.108C40.004 18.136 40.628 17.524 41.492 17.524C42.344 17.524 42.848 17.98 42.848 18.748C42.848 19.504 42.32 19.912 41.372 19.912H40.532V21.208H41.384C42.476 21.208 43.076 21.652 43.076 22.468C43.076 23.332 42.452 23.86 41.48 23.86C40.532 23.86 39.836 23.224 39.692 22.216L38.216 22.492C38.456 24.136 39.716 25.132 41.504 25.132C42.32 25.132 43.052 24.904 43.592 24.484ZM45.3492 25H51.3732V23.656H47.4612L48.9012 22.516C49.7052 21.88 50.1612 21.448 50.5092 21.004C51.0252 20.344 51.2652 19.696 51.2652 18.988C51.2652 18.16 50.9892 17.5 50.4492 17.008C49.9092 16.504 49.2012 16.252 48.3132 16.252C47.5332 16.252 46.7772 16.528 46.2372 17.02C45.6612 17.548 45.3492 18.256 45.3492 19.036C45.3492 19.372 45.3972 19.6 45.5052 19.936H46.9332C46.8372 19.684 46.7892 19.396 46.7892 19.12C46.7892 18.22 47.4132 17.56 48.2772 17.56C49.1532 17.56 49.7412 18.172 49.7412 19.084C49.7412 19.612 49.4892 20.14 48.9252 20.728C48.7932 20.872 48.6252 21.028 48.4452 21.196C48.2652 21.352 47.9532 21.616 47.5092 21.976L45.3492 23.752V25ZM55.0255 25.132C56.1655 25.132 57.1135 24.616 57.7495 23.668C58.2895 22.864 58.5775 21.796 58.5775 20.584C58.5775 19.432 58.3255 18.412 57.8575 17.656C57.2815 16.744 56.4055 16.252 55.3015 16.252C54.4495 16.252 53.6815 16.552 53.1175 17.092C52.5415 17.632 52.2295 18.412 52.2295 19.24C52.2295 20.02 52.5055 20.74 53.0215 21.268C53.5495 21.796 54.2455 22.096 55.0255 22.096C55.9255 22.096 56.7055 21.712 57.1735 21.076C57.1495 21.892 56.9455 22.564 56.5495 23.08C56.1655 23.596 55.6735 23.86 55.0855 23.86C54.2815 23.86 53.6935 23.416 53.4535 22.612L52.2175 23.152C52.6495 24.448 53.6215 25.132 55.0255 25.132ZM55.3015 17.488C56.2615 17.488 56.9815 18.196 56.9815 19.156C56.9815 19.624 56.8135 20.032 56.4895 20.356C56.1655 20.68 55.7575 20.836 55.2895 20.836C54.8215 20.836 54.4255 20.68 54.1015 20.356C53.7775 20.032 53.6215 19.624 53.6215 19.156C53.6215 18.196 54.3415 17.488 55.3015 17.488Z" fill="#666666"/>
-            <rect x="7.5" y="4.5" width="61" height="33" rx="5.5" stroke="#EEEEEE"/>
-            </g>
-            <defs>
-            <filter id="filter0_dd_6237_7178" x="0" y="0" width="76" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_dropShadow_6237_7178"/>
-            <feOffset dy="3"/>
-            <feGaussianBlur stdDeviation="4"/>
-            <feComposite in2="hardAlpha" operator="out"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0 0.278431 0 0 0 0.05 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6237_7178"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset/>
-            <feGaussianBlur stdDeviation="0.5"/>
-            <feComposite in2="hardAlpha" operator="out"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0.0470588 0 0 0 0 0.101961 0 0 0 0 0.294118 0 0 0 0.24 0"/>
-            <feBlend mode="normal" in2="effect1_dropShadow_6237_7178" result="effect2_dropShadow_6237_7178"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_6237_7178" result="shape"/>
-            </filter>
-            </defs>
-          </svg>
-        </div>
-        <div class="description">
-          <h2 class="body-xl">Pamkim water bottle</h2>
-          <div class="flex items-center price">
-            <b class="body-sm">$25.00</b>
-            <span class="strike body-xs">$34.00</span>
-          </div>
-          <p class="body-sm extra">This exclusive Package Free water bottle will make you want to hydrate! It's lightweight and easy to bring anywhere.  </p>
-        </div>
-        <button class="btn paynow">Pay with LazerPay</button>
-        <p class="body-xxs excerpt">Settle payment with cash & crypto</p>
-      </div>
-    </div>
-    <div class="bg-cover">
-      <div class="overlay"></div>
-      <div class="slider">
-        <div class="slide">
-          <img src="assets/sink.png" />
-        </div>
-        <div class="slide">
-          <img src="assets/bottle.png" />
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <script>
-    const myButton = document.querySelector(".paynow");
-    $('.slider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      dots: true,
-      nextArrow: 
-        `<button type="button" class="slick-next">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.42958 3.10058C9.00235 2.52203 9.93099 2.52203 10.5038 3.10058L23.5704 14.9524C24.1432 15.531 24.1432 16.469 23.5704 17.0476L10.5038 28.8994C9.93099 29.478 9.00235 29.478 8.42958 28.8994C7.85681 28.3209 7.85681 27.3828 8.42958 26.8043L20.4592 16L8.42958 5.19571C7.85681 4.61716 7.85681 3.67914 8.42958 3.10058Z" fill="white"/>
-          </svg>
-        </button>`
-      ,
-      prevArrow: 
-        `<button type="button" class="slick-prev">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5704 28.8994C22.9977 29.478 22.069 29.478 21.4962 28.8994L8.42958 17.0476C7.85681 16.469 7.85681 15.531 8.42958 14.9524L21.4962 3.10058C22.069 2.52203 22.9977 2.52203 23.5704 3.10058C24.1432 3.67914 24.1432 4.61716 23.5704 5.19571L11.5408 16L23.5704 26.8043C24.1432 27.3828 24.1432 28.3209 23.5704 28.8994Z" fill="white"/>
-          </svg>
-        </button>`
-    });
-
-    myButton.addEventListener("click", () => {
-      LazerCheckout({
-        name: "Package Free",
-        email: "",
-        amount: "25",
-        key: "pk_live_speggQJcM2FEZAdjkeuWvpqBfXUpUkjy50099CvrNRyow8hKv9",
-        currency: "USD",
-        onClose: (data) => {
-          console.log(data);
-        },
-        onSuccess: (data) => {
-          console.log(data);
-        },
-        onError: (data) => {
-          console.log(data);
-        }
-      })
-    })
-  </script>
-</body>
-
+        <script>
+            const myButton = document.querySelector(".paynow");
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                dots: true,
+                nextArrow: 
+                    `<button type="button" class="slick-next">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.42958 3.10058C9.00235 2.52203 9.93099 2.52203 10.5038 3.10058L23.5704 14.9524C24.1432 15.531 24.1432 16.469 23.5704 17.0476L10.5038 28.8994C9.93099 29.478 9.00235 29.478 8.42958 28.8994C7.85681 28.3209 7.85681 27.3828 8.42958 26.8043L20.4592 16L8.42958 5.19571C7.85681 4.61716 7.85681 3.67914 8.42958 3.10058Z" fill="white"/>
+                    </svg>
+                    </button>`
+                ,
+                prevArrow: 
+                    `<button type="button" class="slick-prev">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5704 28.8994C22.9977 29.478 22.069 29.478 21.4962 28.8994L8.42958 17.0476C7.85681 16.469 7.85681 15.531 8.42958 14.9524L21.4962 3.10058C22.069 2.52203 22.9977 2.52203 23.5704 3.10058C24.1432 3.67914 24.1432 4.61716 23.5704 5.19571L11.5408 16L23.5704 26.8043C24.1432 27.3828 24.1432 28.3209 23.5704 28.8994Z" fill="white"/>
+                    </svg>
+                    </button>`
+            });
+            
+            myButton.addEventListener("click", () => {
+                LazerCheckout({
+                    name: "Package Free",
+                    email: "",
+                    amount: "25",
+                    key: "pk_live_speggQJcM2FEZAdjkeuWvpqBfXUpUkjy50099CvrNRyow8hKv9",
+                    currency: "USD",
+                    onClose: (data) => {
+                        console.log(data);
+                    },
+                    onSuccess: (data) => {
+                        console.log(data);
+                    },
+                    onError: (data) => {
+                        console.log(data);
+                    }
+                })
+            })
+        </script>
+    </body>
 </html>
